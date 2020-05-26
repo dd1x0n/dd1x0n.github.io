@@ -129,10 +129,11 @@ color:#FFFFFF;
 
 .contentText
 {
-width:680px;
+width:500px;
+float: left;
 padding-left:30px;
 padding-right:30px;
-font-size:13px;
+font-size:15px;
 color:#FFFFFF;
 line-height:30px;
 }e
