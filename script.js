@@ -2,7 +2,7 @@
 
 let secret; 
 do { 
-  secret = prompt("what is the secret password?"); 
+  secret = prompt("What is the password? hint: See ReadME") 
 } 
 while (secret !== "analog"); 
 
@@ -13,15 +13,13 @@ var header = document.getElementById("header");
 window.addEventListener('scroll', function(e) {
   last_scroll_position = window.scrollY;
 
-  // Scrolling down
-  if (new_scroll_position < last_scroll_position && last_scroll_position > 80) {
-    // header.removeClass('slideDown').addClass('slideUp');
+  // Scroll down
+  if (new_scroll_position < last_scroll_position && last_scroll_position > 80) { 
     header.classList.remove("slideDown");
     header.classList.add("slideUp");
 
-  // Scrolling up
+  // Scroll up
   } else if (new_scroll_position > last_scroll_position) {
-    // header.removeClass('slideUp').addClass('slideDown');
     header.classList.remove("slideUp");
     header.classList.add("slideDown");
   }
