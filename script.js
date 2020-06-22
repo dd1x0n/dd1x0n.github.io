@@ -4,8 +4,9 @@ let secret;
 do { 
   secret = prompt("What is the password? hint: See ReadME") 
 } 
-while (secret !== "analog"); 
+while (secret.toLowerCase() !== "analog"); 
 
+//Below is the JavaScript needed to have the nav bar pop in and out.
 var new_scroll_position = 0;
 var last_scroll_position;
 var header = document.getElementById("header");
