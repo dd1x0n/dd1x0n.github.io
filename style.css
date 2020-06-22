@@ -1,163 +1,126 @@
-
-body {
-	
-	background: #697281;
-	font-family:  Arial, Helvetica, sans-serif;
-	font-size: 13px;
-	color: rgb(8, 10, 12);
-  background: rgb(189, 202, 218) url(tv2.png) ;
-  background-position: 0% 0%;
-  background-size: cover ;
- background-repeat: no-repeat;
-}
-*
-{
-  margin: 0 auto 0 auto;
- text-align:left;}
-
-#page
-{
-  margin: 0 auto 0 auto; 
-  display: block; 
-  height:auto;
-  position: relative; 
-  overflow: hidden; 
-  width: 850px;
-}
-
-#header
-{
-margin-top:25px;
-padding-top:63px;
-padding-left:30px;
-padding-right:30px;
-
-}
-
-#header h1, #header h2 {
-margin-left:0px;
-width:693px;
-position:relative;
-color:#000000;
-text-align:center;
-font-size:15px;
-font-weight:bold;
-font-family:Arial, Helvetica, sans-serif;
-clear:both;
-}
-
-#header h1
-{
-margin-left:0px;
-margin-bottom: 20px;
-width:693px;
-position:relative;
-color:#26476E;
-font-size:30px;
-}
-
-#nav ul {
-	list-style-type: none;
-	height: 74px;
-	text-align:center;
-	display: flex;
-	justify-content: space-evenly;
-}
-#nav ul li , #ul li a, #ul li a:visited{
-	overflow: hidden;
-	display: inline;
-	text-align:center;
-	line-height:65px;
-	color:rgb(0, 0, 0);
-
-}
-
-#nav ul li a:hover
-{
-color:#000000;
-text-decoration: transparent 50%;
-
-}
-
-.contentTitle
-{
-width:700px;
-height:44px;
-margin-top:20px;
-margin: auto;
-
-}
-
-.contentTitle h1
-{
-
-padding-top:30px;
-font-size:21px;
-font-weight:bold;
-letter-spacing:-1px;
-color:rgb(0, 0, 0);
-display: flexbox;
-}
-
-
-.contentText
-{
-width:654px;
-
-font-size:15px;
-color:rgb(0, 0, 0);
-line-height:30px;
-}
-a:hover
-{
-border-bottom:1px dotted #F1F3F8;
-}
-
-
-footer {
-	font-size: 12px;
-	color: rgba(200, 228, 210, 0.829);
-	position: fixed;
-	bottom: 0;
-	width: 100%;
-	text-align: center;  
-}
-
 html, body {
-text-align: left;
+  height: 100%;
+  width: 100%;
+  margin: 0;
 }
 
-p {
-margin-top: 35px;
-text-align: left;
-text-align:justify;
+.header-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: #333;
+  text-align: center;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-@media (max-width: 945px) {
-	.tm-nav {
-	  position: static;
-	}
+.slideUp {
+  -webkit-transform: translateY(-100px);
+  transform: translateY(-100px);
+  transition: transform .5s ease-out;
+}
+
+.slideDown {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: transform .5s ease-out;
+}
+
+.wrapper {
+  height: 100%;
+}
+
+.parent-img{
+    position: fixed;
+    border-style: solid rgba(29, 29, 29, 0.356);
+    
+}
+.parent-img-responsive{
+    height: 108%;
+    width: 101%;
+    
+}
+
+.fixed-bgi {
+  height: 100%; 
+}
+
+.fixed-bgi {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.scroll-bgi {
+  background-color: #163531;
+  position: center;
   
-	.tm-page-container {
-	  padding-left: 15px;
-	  padding-right: 15px;
-	}
-  }
+}
+
+/* Below are where the images are referenced */
+
+.bgi-1 {
+  background-image: url('roof.jpg');
+}
+
+.bgi-2 {
+  background-image: url('jeep.jpg');
+}
+
+.bgi-3 {
+  background-image: url('road.jpg');
+}
+
+.bgi-4 {
+  background-image: url('hill.jpg');
+}
+
+.bgi-5 {
+  background-image: url('sky.jpg');
+}
+
+.bgi-6 {
+  background-image: url('frost.jpg');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans');
+
+.wrapper {
+  font-family: 'Nunito Sans', sans-serif;
+  line-height: 1.5;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+}
+
+.fixed-bgi {
+  color: white;
+  text-shadow: rgba(48, 46, 46, 0.5);
+}
+
+.scroll-bgi {
+  padding: 10px 70px;
+  color: #676767;
+  text-align: center;
+}
+.fixed-bgi {
+  width: 100%;
+  text-align: center;
+  display: table;
+}
+
+.fixed-bgi h1 {
+  display: table-cell ;
+  vertical-align: middle;
   
-  @media (max-width: 575px) {
-	  .tm-gallery-item {
-		  max-width: 100%;
-		  height: auto;
-	  }
-  }
-  
-  @media (max-width: 480px) {
-	footer {
-	  display: block;
-	}
-  
-	footer span {
-	  display: block;
-	  padding: 15px;
-	}
-  }
+}
+
+.words {
+
+   
+    text-align: auto;
+    text-transform: inherit;
+    
+
+}
