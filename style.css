@@ -10,21 +10,26 @@ html, body {
   width: 100%;
   height: 60px;
   line-height: 60px;
-  background-color: #333;
+  background-color: #163531;
   text-align: center;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  word-spacing: 10px;
+  text-shadow: 0 14px 28px;
+  font-family:'Nunito Sans', sans-serif;
+  font-size: 27px;
+  
 }
 
 .slideUp {
   -webkit-transform: translateY(-100px);
   transform: translateY(-100px);
-  transition: transform .5s ease-out;
+  transition: transform .2s ease-out;
 }
 
 .slideDown {
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: transform .5s ease-out;
+  transition: transform .9s ease-out;
 }
 
 .wrapper {
@@ -101,7 +106,7 @@ html, body {
 
 .scroll-bgi {
   padding: 10px 70px;
-  color: #676767;
+  color: #838282;
   text-align: center;
 }
 .fixed-bgi {

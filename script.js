@@ -1,10 +1,10 @@
 //Below is a pseudo log-in page using javascript. 
 
-let secret; 
-do { 
-  secret = prompt("What is the password? hint: See ReadME") 
-} 
-while (secret.toLowerCase() !== "analog"); 
+// let secret; 
+// do { 
+//   secret = prompt("What is the password? hint: See ReadME") 
+// } 
+// while (secret.toLowerCase() !== "analog"); 
 
 //Below is the JavaScript needed to have the nav bar pop in and out.
 var new_scroll_position = 0;
