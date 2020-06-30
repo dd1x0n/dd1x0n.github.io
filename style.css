@@ -118,14 +118,9 @@ html, body {
 .fixed-bgi h1 {
   display: table-cell ;
   vertical-align: middle;
-  
 }
 
 .words {
-
-   
     text-align: auto;
     text-transform: inherit;
-    
-
 }
