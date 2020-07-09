@@ -5,6 +5,7 @@ html, body {
 }
 
 .header-nav {
+  
   position: fixed;
   top: 0;
   width: 100%;
@@ -13,11 +14,9 @@ html, body {
   background-color: #163531;
   text-align: center;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  word-spacing: 10px;
-  text-shadow: 0 14px 28px;
+  word-spacing: 18px;
+  font-size: 22px;
   font-family:'Nunito Sans', sans-serif;
-  font-size: 27px;
-  
 }
 
 .slideUp {
@@ -123,4 +122,24 @@ html, body {
 .words {
     text-align: auto;
     text-transform: inherit;
+}
+
+
+
+.mail {
+  padding-top: 30px;
+  text-align: center;
+  background-color: teal;
+  background-repeat: repeat;
+  background-size: auto;
+  text-shadow: 0 8px 18px;
+  font-family:'Nunito Sans', sans-serif;
+  font-size: 22px;
+  
+  
+}
+
+.data-2{
+
+  width: 70px;
 }
