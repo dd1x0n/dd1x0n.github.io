@@ -15,8 +15,10 @@ html, body {
   text-align: center;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   word-spacing: 18px;
-  font-size: 22px;
+  font-size: 26px;
   font-family:'Nunito Sans', sans-serif;
+  font-optical-sizing: 15px;
+  
 }
 
 .slideUp {
@@ -107,6 +109,7 @@ html, body {
   padding: 10px 70px;
   color: #838282;
   text-align: center;
+  
 }
 .fixed-bgi {
   width: 100%;
@@ -119,6 +122,9 @@ html, body {
   vertical-align: middle;
 }
 
+
+/* CSS for signUp.html */
+
 .words {
     text-align: auto;
     text-transform: inherit;
@@ -129,17 +135,80 @@ html, body {
 .mail {
   padding-top: 30px;
   text-align: center;
-  background-color: teal;
+  background-color: rgb(89, 136, 136);
   background-repeat: repeat;
-  background-size: auto;
+  background-size: fill;
   text-shadow: 0 8px 18px;
   font-family:'Nunito Sans', sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   
   
 }
 
-.data-2{
+.box {
+  
+  padding-top: 60px;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
 
-  width: 70px;
+a:link {
+  color: whitesmoke;
+  background-color: transparent;
+  text-decoration: none;
+} 
+
+ a:hover {
+  color: rgb(16, 182, 43);
+  background-color: transparent;
+  text-decoration: unset;
+  text-transform: lowercase;
+ }
+
+ a:active {
+  color: rgb(0, 162, 255);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+/* Media Q's */
+
+@media screen and (min-width: 320px) {
+  
+}
+@media screen and (min-width: 480px) {
+ 
+}
+@media screen and (min-width: 768px) {
+  
+}
+@media screen and (min-width: 1024px) {
+  
+}
+@media screen and (min-width: 1200px) {
+  
+}
+@media screen and (min-width: 1600px) {
+  
+}
+
+@media screen and (max-width: 1600px) {
+  
+}
+@media screen and (max-width: 1200px) {
+  
+}
+@media screen and (max-width: 1024px) {
+  
+}
+@media screen and (max-width: 768px) {
+ 
+}
+@media screen and (max-width: 480px) {
+  
+}
+@media screen and (max-width: 320px) {
+  
 }
