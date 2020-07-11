@@ -130,10 +130,8 @@ html, body {
     text-transform: inherit;
 }
 
-
-
 .mail {
-  padding-top: 30px;
+  padding-top: 31px;
   text-align: center;
   background-color: rgb(89, 136, 136);
   background-repeat: repeat;
@@ -166,10 +164,9 @@ a:link {
   text-transform: lowercase;
  }
 
- a:active {
-  color: rgb(0, 162, 255);
+ a:visited {
+  color: rgb(79, 179, 236);
   background-color: transparent;
-  text-decoration: underline;
 }
 
 
