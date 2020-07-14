@@ -18,7 +18,8 @@ html, body {
   font-size: 26px;
   font-family:'Nunito Sans', sans-serif;
   font-optical-sizing: 15px;
-  
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .slideUp {
@@ -31,6 +32,26 @@ html, body {
   -webkit-transform: translateY(0);
   transform: translateY(0);
   transition: transform .9s ease-out;
+}
+
+nav:hover {
+
+  transition: ease-out;
+}
+
+
+a:link {
+  background-color: transparent;
+  text-decoration: none;
+} 
+
+ a:hover {
+  text-decoration: unset;
+  text-transform: lowercase;
+ }
+
+ a:visited {
+  color: rgb(79, 179, 236);
 }
 
 .wrapper {
@@ -123,6 +144,23 @@ html, body {
 }
 
 
+/* :nth-child() requirement 2/3 */
+
+/* Frist Nav Text */
+a:nth-of-type(2n+1) {
+  color: whitesmoke;
+}
+
+/* Second Text */
+a:nth-of-type(2n) {
+  color: rgb(106, 121, 119);
+}
+
+/* Center Text*/
+a:nth-of-type(2) {
+  font-weight: bold;
+}
+
 /* CSS for signUp.html */
 
 .words {
@@ -133,14 +171,17 @@ html, body {
 .mail {
   padding-top: 31px;
   text-align: center;
-  background-color: rgb(89, 136, 136);
   background-repeat: repeat;
   background-size: fill;
-  text-shadow: 0 8px 18px;
   font-family:'Nunito Sans', sans-serif;
-  font-size: 20px;
+  font-size: 21px;
   
-  
+  letter-spacing: .06em;
+  background-image: url('frost.jpg') ;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 .box {
@@ -149,24 +190,6 @@ html, body {
   height: 100%;
   width: 100%;
   margin: 0;
-}
-
-a:link {
-  color: whitesmoke;
-  background-color: transparent;
-  text-decoration: none;
-} 
-
- a:hover {
-  color: rgb(16, 182, 43);
-  background-color: transparent;
-  text-decoration: unset;
-  text-transform: lowercase;
- }
-
- a:visited {
-  color: rgb(79, 179, 236);
-  background-color: transparent;
 }
 
 
@@ -201,7 +224,22 @@ a:link {
   
 }
 @media screen and (max-width: 768px) {
- 
+  .header-nav {
+    
+    font-size: 20px;
+    overflow: hidden;
+    
+    float: none;
+    height: 50px;
+    line-height:50px;
+    text-align: center;
+    margin: 0 auto;
+    background-size: auto;
+  }
+  .mail {
+background-size: auto;
+    
+  }
 }
 @media screen and (max-width: 480px) {
   
@@ -209,3 +247,4 @@ a:link {
 @media screen and (max-width: 320px) {
   
 }
+
