@@ -1,26 +1,19 @@
-//Below is a pseudo log-in page using javascript. 
-
-// let secret; 
-// do { 
-//   secret = prompt("What is the password? hint: See ReadME") 
-// } 
-// while (secret.toLowerCase() !== "analog"); 
-
-//Below is the JavaScript needed to have the nav bar pop in and out.
+// Javascript for nav bar behavior
 
 var new_scroll_position = 0;
 var last_scroll_position;
 var header = document.getElementById("header");
 
+// Event listener looking for sroll information
 window.addEventListener('scroll', function(e) {
   last_scroll_position = window.scrollY;
 
-  // Scroll down
+// Scroll down Nav Bar whn moving up
   if (new_scroll_position < last_scroll_position && last_scroll_position > 80) { 
     header.classList.remove("slideDown");
     header.classList.add("slideUp");
     
-  // Scroll up
+// Scroll up Nav bar when moving down
   } else if (new_scroll_position > last_scroll_position) {
     header.classList.remove("slideUp");
     header.classList.add("slideDown");
@@ -60,3 +53,9 @@ function validateForm() {
   var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
   return isEmpty(email) || re.test(email);
   }
+
+// let secret; 
+// do { 
+//   secret = prompt("What is the password? hint: See ReadME") 
+// } 
+// while (secret.toLowerCase() !== "analog");
