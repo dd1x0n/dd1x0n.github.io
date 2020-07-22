@@ -1,38 +1,52 @@
 <!DOCTYPE html>
-  <html>
+<html lang="en">
     <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="style.css" href="normalize.css" />
-          <title>Sign-Up</title>
+<!-- Meta tags -->
+        <meta http-equiv="Content-Type" ; charset=utf-8 />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <link rel="stylesheet" type="text/css" href="style.css" href="normalize.css"/>
+      <title>Sign-up</title>
     </head>
-      <body> 
-        <script defer src="script.js"></script>
-          <header class="header-nav" id="header">
-            <nav>
-              <a class="link" href="index.html" title="Home">HOME</a>
-              <a class="link" href="Darik Dixon - Resume.pdf" title="Resume/CV">RESUMÉ</a>
-              <a class="link" href="signUp.html" title="Sign Up">SIGN-UP</a>
-              <a class="link" href="mailto:loaterson@hotmail.com,loaterson@hotmail.com?subject=Hello%20email">CONTACT</a>
-            </nav>
+  <body>
+<!-- Javescript link -->
+    <script defer src="script.js"></script>
+  <nav id="hamnav">
+<!-- Hamburger Nav-->
+    <label for="hamburger">&#9776;</label>
+    <input type="checkbox" id="hamburger"/>
+<!-- Menu links -->
+    <div id="hamitems">
+      <a class="link" href="index.html" title="Home">HOME</a>
+      <a class="link" href="Darik Dixon - Resume.pdf" title="Resume/CV">RESUMÉ</a>
+      <a class="link" href="signUp.html" title="Sign Up">SIGN-UP</a>
+      <a class="link" href="mailto:loaterson@hotmail.com,loaterson@hotmail.com?subject=Hello%20email">CONTACT</a>
+    </div>
+  </nav>
           </header>
-    <div class="wrapper"> 
       <div class="box">
         <form class="mail"method="post" action="//submit.form" onSubmit="return validateForm();">
           <div class="mail">
           </div>
-            <div class="mail">Mailing List Subscription</div>
+            <div class="mail">Join our mailing list!</div>
               <div class="mail">
                 <a>
                   <div>First Name</ul><span style="color: red;"> *</span><br/>
-                    <input type="text" id="data_2" name="data_2" />
+                    <input type="text" id="data_2" name="data_2" style="color: #000000; font-size: 18px; background-color: #d5e6f77a;" size="20" maxlength="30"/>
                   <div>Last Name<span style="color: red;"> *</span><br/>
-                    <input type="text" id="data_3" name="data_3"/>
+                    <input type="text" id="data_3" name="data_3" style="color: #000000; font-size: 18px; background-color: #d5e6f77a;" size="20" maxlength="30"/>
                   <div class=>Email<span style="color: red;"> *</span><br/>
-                    <input type="text" id="data_4" name="data_4" />
+                    <input type="text" id="data_4" name="data_4" style="color: #000000; font-size: 18px; background-color: #d5e6f77a;" size="20" maxlength="30"/>
                   </div>
                   <div style=>Comments<br/>
-                    <textarea id="data_5" false name="data_5" style="max-width : 450px;" rows="6" ></textarea>
+                    <textarea id="data_5" false name="data_5" style="max-width: 550px color: #000000; font-size: 18px; background-color: #d5e6f77a;" size="40" maxlength="30" rows="6" ></textarea>
+                  </div>
+                  <div class="pic-ctn">
+                    <img src="https://picsum.photos/id/870/200/300?grayscale&blur=1" class="pic">
+                    <img src="https://picsum.photos/200/300?grayscale&blur=1"  class="pic">
+                    <img src="https://picsum.photos/200/300?t=3?grayscale&blur=1"  class="pic">
+                    <img src="https://picsum.photos/200/300?t=4?grayscale&blur=1" class="pic">
+                    <img src="https://picsum.photos/200/300?t=5?grayscale&blur=1" class="pic">
                   </div>
                 </a>
               <br>

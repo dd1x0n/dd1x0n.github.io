@@ -1,29 +1,4 @@
-// Javascript for nav bar behavior
-
-var new_scroll_position = 0;
-var last_scroll_position;
-var header = document.getElementById("header");
-
-// Event listener looking for sroll information
-window.addEventListener('scroll', function(e) {
-  last_scroll_position = window.scrollY;
-
-// Scroll down Nav Bar whn moving up
-  if (new_scroll_position < last_scroll_position && last_scroll_position > 80) { 
-    header.classList.remove("slideDown");
-    header.classList.add("slideUp");
-    
-// Scroll up Nav bar when moving down
-  } else if (new_scroll_position > last_scroll_position) {
-    header.classList.remove("slideUp");
-    header.classList.add("slideDown");
-  }
-
-  new_scroll_position = last_scroll_position;
-});
-
 // JS for form validation req. 1/3
-
 function validateForm() {
   if (isEmpty(document.getElementById('data_2').value.trim())) {
   alert('First name is required!');
