@@ -2,7 +2,7 @@
 My Project Website
 
 # Overview
-To open either navigate to my index.html file or visit the live website at dd1x0n@github.io 
+To open either navigate to my index.html file or visit the live website at https://dd1x0n.github.io/index.html
 
 This project was built for the May 2020 Code Louisville Front End final class project. This project uses a handful of CSS and Javascript techniques that control the behavior of the photos shot and their interaction with the scrolling texts. 
 
@@ -23,7 +23,7 @@ I have holding on these photos waiting for a time show them off and water better
 
 - Use “:nth child” CSS to style a series of elements (for example, change the color of every 2nd item in a list)
 
-	This is used in the CSS for the transformation and fad out of the image carosel. 
+	This is used in the CSS for the transformation and fad out of the image carousel. 
 
 - Create an image carousel with at least 3 images that it rotates through
 
