@@ -265,10 +265,9 @@ img:nth-child(5) {
   .fixed-bgi {
     background-color: rgb(114, 119, 119);
     background-size: 100%;
-    
     background-repeat: repeat-y;
   }
-  /* [Mobile View] */
+  /* Mobile View */
   @media screen and (max-width: 768px){
     /* Show Hamburger Icon */
     #hamnav label { 
