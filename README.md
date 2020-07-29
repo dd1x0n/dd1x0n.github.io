@@ -38,7 +38,7 @@ I have been holding on these photos waiting for a time show them off and what be
 	Originally there was going to be a persistent border that framed the images but that was removed early on in order to simplify the project. 
 
 # Additional Requirements
-- Nav bar resizes and transforms into drop down menu when in mobile view. Additionally, the background image multiplies as if one was looking at a fill roll.
+- Nav bar resizes and transforms into drop down menu when in mobile view. Additionally, the background image multiplies as if one was looking at a film roll for a mtion picture.
 - CSS is in its own file and w/ more than three custom written elements.
 - JavaScript is on a different file and is used to validate sign-up form.
 - Comments are throughout the HTML, CSS & JS files.

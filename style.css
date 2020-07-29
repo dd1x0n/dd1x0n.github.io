@@ -12,7 +12,6 @@ html, body {
 }
 
 /* Nav display On Desktop */
-
 #hamnav {
   width: 100%;
   background: #24423e;
@@ -23,6 +22,9 @@ html, body {
   text-align: center;
   -webkit-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
           box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+          -webkit-transition: -webkit-transform .20s ease-out;
+          transition: -webkit-transform .20s ease-out;
+          -o-transition: transform .20s ease-out;
           transition: transform .20s ease-out;
           transition: transform .20s ease-out, -webkit-transform .20s ease-out;        
 }
@@ -31,13 +33,12 @@ html, body {
 #hamnav label, #hamburger { display: none; }
 
 /* Horizontal Menu Items */
-#hamitems { display: flex; }
+#hamitems { display: -webkit-box; display: -ms-flexbox; display: flex; }
 #hamitems a {
   width: 50%;
   padding: 10px;
   color: white;
   text-decoration: none;
-  
 }
 
 #hamitems a:hover {
@@ -185,25 +186,57 @@ a:nth-of-type(2n) {
 }
 
 /* CSS for transformation and and fade out */
-@keyframes display {
+@-webkit-keyframes display {
   0% {
-    transform: translateX(200px);
+    -webkit-transform: translateX(200px);
+            transform: translateX(200px);
     opacity: 0;
   }
   10% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
     opacity: 1;
   }
   20% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
     opacity: 1;
   }
   30% {
-    transform: translateX(-200px);
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
     opacity: 0;
   }
   100% {
-    transform: translateX(-200px);
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
+    opacity: 0;
+  }
+}
+@keyframes display {
+  0% {
+    -webkit-transform: translateX(200px);
+            transform: translateX(200px);
+    opacity: 0;
+  }
+  10% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+  20% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+  30% {
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
     opacity: 0;
   }
 }
@@ -220,22 +253,27 @@ a:nth-of-type(2n) {
   top: 0;
   left: calc(50% - 100px);
   opacity: 0;
-  animation: display 11s infinite;
+  -webkit-animation: display 10s infinite;
+          animation: display 10s infinite;
 }
 
 /* Use of :nth child to stagger fade out of images */
 
 img:nth-child(2) {
-  animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 img:nth-child(3) {
-  animation-delay: 4s;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
 }
 img:nth-child(4) {
-  animation-delay: 6s;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
 }
 img:nth-child(5) {
-  animation-delay: 8s;
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
 }
 
 /* Media Q's & Responsive Menu Requirement*/
@@ -255,11 +293,9 @@ img:nth-child(5) {
 } 
 @media screen and (max-width: 768px) {
   .words {
-
     font-size: 12px;
   }
   .scroll-bgi {
-    
     padding: 2.5px;
   }
   .fixed-bgi {
@@ -273,18 +309,18 @@ img:nth-child(5) {
     #hamnav label { 
       display: inline-block; 
       color: white;
-      background: #a02620;
+      background: #17566ef1;
       font-style: normal;
       font-size: 1.5em;
       padding: 10px;
-      text-align: right;
       padding-top: 0mm;
       padding-bottom: 1.5mm;
     }
   
     /* Break down menu items into vertical */
     #hamitems a {
-      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
       display: block;
       width: 100%;
       border-top: 1px solid #333;
